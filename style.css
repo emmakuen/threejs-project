@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --dark-background: #1a2237;
+  --spacing: 350px;
+  --spacing-small: 150px;
+  --spacing-extra-small: 100px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  width: 100vw;
+  color: #fff;
+  z-index: 99;
+  position: absolute;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+blockquote {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  background-color: var(--dark-background);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  margin-top: 150px;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 3rem;
+  background-color: var(--dark-background);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote,
+.copyright {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+
+
+blockquote p {
+  color: #000;
+  background-color: #fff;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1.3;
+}
+
+.right {
+  grid-column: 6 / 12;
+}
+
+.copyright {
+  text-align: end;
+  font-size: 2rem;
+  margin-bottom: var(--spacing-small);
+}
+
+ul li {
+  padding-bottom: 0.5rem;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    grid-column: 2 / span 7;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-small);
+    margin-top: 80px;
+  }
+
+  blockquote {
+    margin-bottom: var(--spacing-small);
+  }
+
+  blockquote p {
+    font-size: 2rem;
+  }
+
+  section {
+    margin-bottom: var(--spacing-small);
+    grid-column: 2/ 9;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .right {
+    grid-column: 4 /11;
+  }
+
+  .copyright {
+    margin-bottom: 80px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  header {
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing-extra-small);
+
+  }
+
+  blockquote {
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing-extra-small);
+  }
+
+
+  section {
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing-extra-small);
+  }
+}
