@@ -78,7 +78,9 @@ const spaceTexture = new three.TextureLoader().load(
 scene.background = spaceTexture;
 
 // Avatar
-const myTexture = new three.TextureLoader().load("/images/profile.jpg");
+const myTexture = new three.TextureLoader().load(
+  "https://image.freepik.com/free-vector/high-self-esteem-illustration-with-woman-leaves_23-2148723709.jpg"
+);
 
 const me = new three.Mesh(
   new three.BoxGeometry(3, 3, 3),
@@ -92,10 +94,14 @@ me.rotation.z += 120;
 // Planet
 
 // Photo on Unsplash by Nick Iliasov on https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const planetTexture = new three.TextureLoader().load("/images/black.jpg");
+const planetTexture = new three.TextureLoader().load(
+  "https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+);
 
 // Photo on Unsplash by Brian Patrick Tagalog on https://unsplash.com/@briantagalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const normalTexture = new three.TextureLoader().load("/images/texture.jpg");
+const normalTexture = new three.TextureLoader().load(
+  "https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+);
 const planet = new three.Mesh(
   new three.SphereGeometry(3, 32, 32),
   new three.MeshStandardMaterial({
