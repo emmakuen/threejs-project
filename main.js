@@ -72,11 +72,11 @@ const addStar = () => {
 Array(400).fill().forEach(addStar);
 
 // Photo on Unsplash by Mohammad Alizade on https://unsplash.com/s/photos/gradient?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const spaceTexture = new three.TextureLoader().load("./images/bg.jpg");
+const spaceTexture = new three.TextureLoader().load("/images/bg.jpg");
 scene.background = spaceTexture;
 
 // Avatar
-const myTexture = new three.TextureLoader().load("./images/profile.jpg");
+const myTexture = new three.TextureLoader().load("/images/profile.jpg");
 
 const me = new three.Mesh(
   new three.BoxGeometry(3, 3, 3),
@@ -90,10 +90,10 @@ me.rotation.z += 120;
 // Planet
 
 // Photo on Unsplash by Nick Iliasov on https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const planetTexture = new three.TextureLoader().load("./images/black.jpg");
+const planetTexture = new three.TextureLoader().load("/images/black.jpg");
 
 // Photo on Unsplash by Brian Patrick Tagalog on https://unsplash.com/@briantagalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const normalTexture = new three.TextureLoader().load("./images/texture.jpg");
+const normalTexture = new three.TextureLoader().load("/images/texture.jpg");
 const planet = new three.Mesh(
   new three.SphereGeometry(3, 32, 32),
   new three.MeshStandardMaterial({
