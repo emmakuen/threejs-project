@@ -72,7 +72,9 @@ const addStar = () => {
 Array(400).fill().forEach(addStar);
 
 // Photo on Unsplash by Mohammad Alizade on https://unsplash.com/s/photos/gradient?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-const spaceTexture = new three.TextureLoader().load("/images/bg.jpg");
+const spaceTexture = new three.TextureLoader().load(
+  "https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+);
 scene.background = spaceTexture;
 
 // Avatar
