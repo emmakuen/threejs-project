@@ -79,7 +79,7 @@ scene.background = spaceTexture;
 
 // Avatar
 const myTexture = new three.TextureLoader().load(
-  "https://image.freepik.com/free-vector/high-self-esteem-illustration-with-woman-leaves_23-2148723709.jpg"
+  "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
 );
 
 const me = new three.Mesh(
@@ -123,8 +123,8 @@ const moveCamera = () => {
   planet.rotation.y += 0.025;
   planet.rotation.z += 0.005;
 
-  // me.rotation.y += 0.005;
-  // me.rotation.z += 0.01;
+  me.rotation.y += 0.005;
+  me.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
